@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:server": "json-server --watch ./mock/db.json --port 3004"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.24.9",
