@@ -5,10 +5,14 @@ function App() {
   const { data } = useQueryTodo();
   return (
     <div className="App">
-      <p>hello</p>
-      <ul>
+      <ul className="flex justify-center mt-6">
         {data?.map((todo) => (
-          <li>{todo.title}</li>
+          <li
+            key={todo.id}
+            className="card w-96 bg-primary text-primary-content"
+          >
+            <h3 className="card-title">{todo.title}</h3>
+          </li>
         ))}
       </ul>
     </div>
