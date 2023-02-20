@@ -1,8 +1,8 @@
 import './App.css';
-import { useQueryTodo } from './hooks/useQueryTodos';
+import { useQueryTodos } from './hooks/useQueryTodos';
 
 function App() {
-  const { data } = useQueryTodo();
+  const { data } = useQueryTodos();
   return (
     <div className="App">
       <ul className="flex justify-center mt-6">
