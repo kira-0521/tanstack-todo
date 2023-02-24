@@ -3,3 +3,14 @@ export type Todo = {
   title: string;
   completed: boolean;
 };
+
+export type CreateTodoDTO = {
+  title: string;
+  completed?: boolean;
+};
+
+export type UpdateTodoDTO = {
+  id: number;
+  title: string;
+  completed?: boolean;
+};
