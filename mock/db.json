@@ -1,9 +1,14 @@
 {
   "todos": [
     {
-      "title": "test title",
+      "title": "マサラタウンのサトル",
       "completed": false,
       "id": 1
+    },
+    {
+      "title": "test title",
+      "completed": true,
+      "id": 2
     }
   ]
 }
