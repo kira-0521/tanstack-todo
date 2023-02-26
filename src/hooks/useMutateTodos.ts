@@ -25,10 +25,8 @@ export const useMutateTodos = () => {
     onSuccess(data, variables) {
       client.setQueryData<Todo[]>(['todo'], (prev) => {
         if (!prev) return [];
-        return prev?.map((todo) => {
-          if (todo.id === data.id) {
-            return data;
-          }
+        return prev.map((todo) => {
+          if (todo.id === data.id) return data;
           return todo;
         });
       });
